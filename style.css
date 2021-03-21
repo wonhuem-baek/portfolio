@@ -11,6 +11,7 @@
   --color-grey: #616161;
   --color-light-grey: #7c7979;
   --color-blue: #73aace;
+  --color-sapphire: #0f52ba;
   --color-sky: rgb(102, 200, 200);
   --color-dark-sky: rgb(9, 95, 95);
   --color-yellow: #fff7d1;
@@ -98,11 +99,19 @@ p {
 }
 /* Navbar */
 #navbar {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 16px;
+  background-color: transparent;
+  transition: all var(--animation-duration) ease-in-out;
+}
+
+#navbar.navbar--dark {
   background-color: var(--color-sky);
+  padding: 8px;
 }
 
 .navbar__logo {
@@ -145,6 +154,7 @@ p {
 #home {
   background: url("imgs/home-background1.png") center/cover no-repeat;
   padding: 40px;
+  padding-top: 120px;
   text-align: center;
 }
 
