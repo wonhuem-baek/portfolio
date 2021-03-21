@@ -32,23 +32,30 @@
       <li class="navbar__menu__item">Testimonial</li>
       <li class="navbar__menu__item">Contact</li>
     </ul>
+    <!-- Toggle button -->
+    <button class="navbar__toggle-btn">
+      <i class="fas fa-bars"></i>
+    </button>
   </nav>
   <!-- home -->
   <section id="home">
-    <img src="imgs/favicon.png" alt="profile photo" class="home__avatar" />
-    <h1 class="home__title">Hello,<br />I'm Dream Coder</h1>
-    <h2 class="home__description">
-      A Software Engineer currently residing in Vancouver
-    </h2>
-    <button class="home__contact">Contact Me</button>
+    <div class="home__container">
+      <img src="imgs/favicon.png" alt="profile photo" class="home__avatar" />
+      <h1 class="home__title">Hello,<br />I'm Dream Coder</h1>
+      <h2 class="home__description">
+        A Software Engineer currently residing in Vancouver
+      </h2>
+      <button class="home__contact">Contact Me</button>
+    </div>
   </section>
+
   <!-- about -->
   <section id="about" class="section section__container">
     <h1>About me</h1>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-      Numquam dolore, suscipit enim nihil sapiente provident delectus
-      iure magni dolorem sed ea nobis exercitationem quis?
-      Voluptatum, aut corporis. Itaque, neque molestias.
+       Numquam dolore, suscipit enim nihil sapiente provident delectus
+       iure magni dolorem sed ea nobis exercitationem quis?
+       Voluptatum, aut corporis. Itaque, neque molestias.
     </p>
     <div class="about__majors">
       <div class="major">
@@ -58,61 +65,67 @@
         <h2 class="major__title">Front-End</h2>
         <div class="major__description">
           HTML, CSS, JavaScript, TypeScript
-          <br />React, Vue, Web APis
+          <br />React, Vue, Web APIs
         </div>
       </div>
       <div class="major">
         <div class="major__icon">
-          <i class="fab fa-html5"></i>
+          <i class="fas fa-mobile"></i>
         </div>
         <h2 class="major__title">Front-End</h2>
-        <div class="major__description">
+        <p class="major__description">
           HTML, CSS, JavaScript, TypeScript
           <br />React, Vue, Web APis
-        </div>
+        </p>
       </div>
       <div class="major">
         <div class="major__icon">
-          <i class="fab fa-html5"></i>
+          <i class="fas fa-server"></i>
         </div>
         <h2 class="major__title">Front-End</h2>
-        <div class="major__description">
+        <p class="major__description">
           HTML, CSS, JavaScript, TypeScript
           <br />React, Vue, Web APis
-        </div>
+        </p>
       </div>
     </div>
     <div class="about__jobs">
       <div class="job">
-        <img src="imgs/jobs/hanabank.jpg" alt="Hanabank" class="job__logo" />
+        <img src="imgs/jobs/hanabank.jpg" 
+             alt="Hanabank" 
+             class="job__logo" 
+        />
         <div class="job__description">
           <p class="job__name">
-            Currently working at Hanabank as Software Enginer</p>
-          <p class="job__period">
-            2019 sept - Until now</p>
+            Currently working at Hanabank as Software Enginer
+          </p>
+          <p class="job__period">2019 sept - Until now </p> 
         </div>
-
       </div>
       <div class="job">
-        <img src="imgs/jobs/hanabank.jpg" alt="Hanabank" class="job__logo" />
+        <img src="imgs/jobs/hanabank.jpg" 
+             alt="Hanabank" 
+             class="job__logo" 
+        />
         <div class="job__description">
           <p class="job__name">
-            Currently working at Hanabank as Software Enginer</p>
-          <p class="job__period">
-            2019 sept - Until now</p>
+            Currently working at Hanabank as Software Enginer
+          </p>
+          <p class="job__period">2019 sept - Until now</p>
         </div>
       </div>
     </div>
   </section>
+
   <!-- skill -->
-  <section id="skill" class="section">
+  <section id="skills" class="section">
     <div class="section__container">
       <h1>Skills</h1>
       <h2>Skills & Attributes</h2>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-        Ut dignissimos, quia ea voluptates, magnam animi quod explicabo
-        maiores vero alias mollitia suscipit iure a molestias consequatur,
-        velit cum sed eligendi?
+         Ut dignissimos, quia ea voluptates, magnam animi quod explicabo
+         maiores vero alias mollitia suscipit iure a molestias consequatur,
+         velit cum sed eligendi?
       </p>
       <div class="skillset">
         <div class="skillset__left">
@@ -195,6 +208,7 @@
       </div>
     </div>
   </section>
+
   <!-- work -->
   <section id="work" class="section">
     <div class="section__container">
@@ -274,8 +288,9 @@
       </div>
     </div>
   </section>
+
   <!-- testimonials -->
-  <section id="Testimonials" class="section">
+  <section id="testimonials" class="section">
     <div class="section__container">
       <h1>Testimonials</h1>
       <h3>See what they say about me</h3>
@@ -307,6 +322,7 @@
       </div>
     </div>
   </section>
+
   <!-- contact -->
   <section id="contact" class="section">
     <h1 class="contact__title">Let's talk</h1>
