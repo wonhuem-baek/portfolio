@@ -11,8 +11,8 @@
   --color-grey: #616161;
   --color-light-grey: #7c7979;
   --color-blue: #73aace;
-  --color-sapphire: #0f52ba;
   --color-sky: rgb(102, 200, 200);
+  --color-medi-sky: #0b8680;
   --color-dark-sky: rgb(9, 95, 95);
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
@@ -107,10 +107,11 @@ p {
   padding: 16px;
   background-color: transparent;
   transition: all var(--animation-duration) ease-in-out;
+  z-index: 1;
 }
 
 #navbar.navbar--dark {
-  background-color: var(--color-sky);
+  background-color: var(--color-medi-sky);
   padding: 8px;
 }
 
