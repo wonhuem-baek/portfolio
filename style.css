@@ -123,6 +123,7 @@ p {
 
 .navbar__menu {
   display: flex;
+  margin: 0 14px;
 }
 
 .navbar__menu__item {
