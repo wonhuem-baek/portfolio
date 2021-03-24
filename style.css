@@ -10,6 +10,11 @@
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
   --color-light-grey: #7c7979;
+  --color-Sapphire: Sapphire;
+  --color-aqua: aqua;
+  --color-azure: azure;
+  --color-turquoise: turquoise;
+  --color-aquamarine: aquamarine;
   --color-blue: #73aace;
   --color-sky: rgb(102, 200, 200);
   --color-medi-sky: #0b8680;
@@ -104,7 +109,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px;
+  padding: 16px 0;
   background-color: transparent;
   transition: all var(--animation-duration) ease-in-out;
   z-index: 1;
@@ -112,7 +117,7 @@ p {
 
 #navbar.navbar--dark {
   background-color: var(--color-medi-sky);
-  padding: 8px;
+  padding: 8px 0;
 }
 
 .navbar__logo {
@@ -123,7 +128,6 @@ p {
 
 .navbar__menu {
   display: flex;
-  margin: 0 14px;
 }
 
 .navbar__menu__item {
@@ -151,7 +155,7 @@ p {
 
 /* Home */
 #home {
-  background: url("imgs/home-background1.png") center/cover no-repeat;
+  background: url("imgs/home-background.png") center/cover no-repeat;
   padding: 40px;
   padding-top: 120px;
   text-align: center;
@@ -161,16 +165,16 @@ p {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  border: 2px solid var(--color-light-white);
+  border: 2px solid var(--color-white);
 }
 
 .home__title,
 .home__description {
-  color: var(--color-dark-white);
+  color: var(--color-white);
 }
 
 .home__contact {
-  color: var(--color-dark-white);
+  color: var(--color-white);
   font-size: var(--font-regular);
   font-weight: var(--weight-bold);
   margin: 24px;
@@ -325,7 +329,7 @@ p {
 
 .category__btn.selected,
 .category__btn:hover {
-  background-color: var(--color-pink);
+  background-color: var(--color-dark-sky);
   color: var(--color-white);
 }
 
@@ -336,7 +340,7 @@ p {
 }
 
 .category__count {
-  background-color: var(--color-orange);
+  background-color: var(--color-sky);
   border-radius: 50%;
   color: var(--color-white);
   width: 24px;
@@ -405,7 +409,7 @@ p {
 }
 
 .project__description h3 {
-  color: var(--color-white);
+  color: var(--color-orange);
 }
 
 .project__description h3:after {
@@ -413,9 +417,9 @@ p {
   display: block;
   position: relative;
   left: 50%;
-  width: 25px;
+  width: 50px;
   height: 2px;
-  margin-left: -12px;
+  transform: translateX(-50%);
   margin-top: 8px;
   background-color: var(--color-dark-white);
 }
@@ -518,6 +522,11 @@ p {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
+    background-color: var(--color-sky);
+  }
+
+  #navbar.navbar--dark {
+    padding: 16px 0px;
   }
 
   .navbar__menu {
@@ -525,6 +534,10 @@ p {
     text-align: center;
     width: 100%;
     display: none;
+  }
+
+  .navbar__menu.open {
+    display: block;
   }
 
   .about__majors {
