@@ -109,7 +109,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 0;
+  padding: 10px 0;
   background-color: transparent;
   transition: all var(--animation-duration) ease-in-out;
   z-index: 1;
@@ -117,7 +117,7 @@ p {
 
 #navbar.navbar--dark {
   background-color: var(--color-medi-sky);
-  padding: 8px 0;
+  padding: 0 0;
 }
 
 .navbar__logo {
@@ -137,6 +137,10 @@ p {
   cursor: pointer;
   border: 1px solid transparent;
   border-radius: var(--size-border-radius);
+}
+
+.navbar__menu__item.active {
+  border: 1px solid var(--color-white);
 }
 
 .navbar__menu__item:hover {
@@ -539,7 +543,7 @@ p {
   }
 
   #navbar.navbar--dark {
-    padding: 16px 0px;
+    padding: 12px 0px;
   }
 
   .navbar__menu {
